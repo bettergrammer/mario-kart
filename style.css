@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#sky {
+  height: 220px;
+  background: rgb(57, 169, 255);
+}
+
+#grass {
+  height: 180px;
+  background: rgb(21, 220, 21)
+}
+
+.curb {
+  height: 10px;
+  background: rgb(128, 128, 128);
+}
+
+#street {
+  height: 253px;
+  background: rgb(109, 109, 109);
+  display: flex;
+}
+
+.lines {
+  margin: auto 0px;
+  height: 10px;
+  width: 40px;
+  background: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+img {
+  mix-blend-mode: multiply;
+  height: 16.5%;
+  position: absolute;
+  float: left;
+  right: 0;
+  animation: drive 6s linear 0s normal infinite forwards;
+  margin-top: 7.5px;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(100px);
+  }
+  10% {
+    transform: translateX(-50px);
+  }
+  25% {
+    transform: translateX(-600px);
+  }
+  50% {
+    transform: translateX(-1300px);
+  }
+  75% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(-2200px);
+  }
+}
